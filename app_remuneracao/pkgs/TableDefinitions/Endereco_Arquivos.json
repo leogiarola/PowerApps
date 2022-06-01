@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "Endereco_Arquivos": "{\"name\":\"Endereco_Arquivos\",\"title\":\"Endereco_Arquivos\",\"x-ms-permission\":\"read-write\",\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"NOME_x0020_ARQUIVO\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"NOME ARQUIVO\"},\"ENDERECO\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"ENDERECO\"},\"URLimagem\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"URLimagem\"},\"__PowerAppsId__\":{\"type\":\"string\",\"x-ms-keyOrder\":1,\"x-ms-keyType\":\"primary\",\"x-ms-sort\":\"none\",\"x-ms-permission\":\"read-only\",\"title\":\"Row id\"}}}}}"
+  },
+  "EntityName": "Endereco_Arquivos",
+  "TableName": "Endereco_Arquivos"
+}

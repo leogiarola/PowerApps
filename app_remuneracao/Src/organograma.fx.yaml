@@ -1,0 +1,374 @@
+"organograma As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =618
+        Width: =Parent.Width
+        Y: =149
+        ZIndex: =1
+
+        DataCard1_1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =596
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Image8 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =548
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =org_cmin
+                ImagePosition: =ImagePosition.Fill
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Visible: =false
+                Width: =1281
+                X: =40
+                Y: =34
+                ZIndex: =3
+
+            Group1_2 As group:
+                Height: =5
+                Width: =5
+                X: =-155
+                Y: =-74
+                ZIndex: =5
+
+                Rectangle5_11 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(204, 204, 204, 1)
+                    Fill: =RGBA(237, 237, 237, 1)
+                    FocusedBorderThickness: =4
+                    Height: =377
+                    HoverFill: =RGBA(204, 204, 204, 1)
+                    PressedFill: =RGBA(204, 204, 204, 1)
+                    Visible: =false
+                    Width: =1281
+                    X: =40
+                    Y: =8
+                    ZIndex: =1
+
+                Label3_48 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(128, 128, 128, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Lato Black'
+                    Height: =26
+                    Size: =13
+                    Text: ="Organograma CMIN / MIPE"
+                    Width: =1281
+                    X: =40
+                    Y: =8
+                    ZIndex: =2
+
+    RectQuickActionBar6_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =40
+        Width: =Parent.Width
+        ZIndex: =2
+
+    RectQuickActionBar6_3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =318
+        Visible: =false
+        Width: =Parent.Width
+        Y: =40
+        ZIndex: =3
+
+    Label6_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Verdana
+        FontWeight: =FontWeight.Bold
+        Height: =78
+        Size: =45
+        Text: ="REMUNERAÇÃO & ESTRUTURA"
+        Width: =1366
+        Y: =40
+        ZIndex: =4
+
+    Image1_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =199
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='gestão-de-contratos-1'
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
+        Width: =1280
+        X: =43
+        Y: =149
+        ZIndex: =10
+
+    Image7_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='Logomarca CSN Mineração'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =73
+        X: =1286
+        ZIndex: =11
+
+    Image12_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =login_cinza
+        OnSelect: =Navigate(login)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =48
+        ZIndex: =16
+
+    menu_1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =16
+
+        Label5_13 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(home)
+            Size: =13
+            Text: ="HOME"
+            Width: =176
+            X: =177
+            Y: =109
+            ZIndex: =5
+
+        Label5_14 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: |
+                =Navigate(estrutura)
+            Size: =13
+            Text: ="AJUSTE DE ESTRUTURA"
+            Width: =225
+            X: =357
+            Y: =109
+            ZIndex: =6
+
+        Label5_15 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(relatorios)
+            Size: =13
+            Text: ="RELATÓRIOS"
+            Width: =176
+            X: =605
+            Y: =109
+            ZIndex: =7
+
+        Label5_16 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(projetos)
+            Size: =13
+            Text: ="PROJETOS"
+            Width: =176
+            X: =798
+            Y: =109
+            ZIndex: =8
+
+        Label5_17 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(organograma)
+            Size: =13
+            Text: ="ORGANOGRAMA"
+            Width: =176
+            X: =1012
+            Y: =109
+            ZIndex: =9
+
+        Label5_9 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =310
+            Y: =108
+            ZIndex: =12
+
+        Label5_10 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =582
+            Y: =108
+            ZIndex: =13
+
+        Label5_11 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =759
+            Y: =108
+            ZIndex: =14
+
+        Label5_12 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =965
+            Y: =108
+            ZIndex: =15
+
+    PdfViewer1 As pdfViewer:
+        Document: |-
+            ="https://csno365-my.sharepoint.com/personal/leoncio_giarola_lg1_csn_com_br/Documents/LEONCIO/Power%20Apps/Arquivos/09_2021%20-%20Organograma%20%C3%81rea%20(CMIN).pdf"
+        Height: =546
+        Width: =1280
+        X: =43
+        Y: =185
+        ZIndex: =17
+

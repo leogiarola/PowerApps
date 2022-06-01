@@ -1,0 +1,212 @@
+{
+  "4e4549f1-0f56-4b53-8326-bfcf94bc03e4": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Usuários do Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1573/1.0.1573.2770/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuáriosdoOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4e4549f1-0f56-4b53-8326-bfcf94bc03e4"
+  },
+  "6439f17c-4c20-4c89-badb-74895e62ba48": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1570/1.0.1570.2764/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "749a3461-3398-43fd-9f6d-bbdb9fb09a65": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "749a3461-3398-43fd-9f6d-bbdb9fb09a65"
+        }
+      }
+    },
+    "datasets": {
+      "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5A5X3YMOSUSAFAKXCLDUQ2Q3HXK": {
+        "dataSources": {
+          "Endereco_Arquivos": {
+            "tableName": "Endereco_Arquivos"
+          }
+        }
+      },
+      "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5CAYJOLHQDXPVCLUFRJWVONKML2": {
+        "dataSources": {
+          "DE_PARA": {
+            "tableName": "DE_PARA"
+          }
+        }
+      },
+      "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5CEEKUMNWUG4VF3UZU4EAVJHRQA": {
+        "dataSources": {
+          "BD_PROV_DESCRICOES": {
+            "tableName": "BD_PROV_DESCRICOES"
+          }
+        }
+      },
+      "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5EMS5PKLPVN2ZCIWFOFNPBLF35M": {
+        "dataSources": {
+          "Usuarios_Senhas": {
+            "tableName": "Usuarios_Senhas"
+          }
+        }
+      },
+      "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5FGQ3FVED6WLNB2D5ERZ3PHN3CW": {
+        "dataSources": {
+          "PROV_DE_PARA": {
+            "tableName": "PROV_DE_PARA"
+          }
+        }
+      },
+      "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5G3D3KXCGBA4ZA2DNTALEC7VTNI": {
+        "dataSources": {
+          "BD_CCusto_N": {
+            "tableName": "BD_CCusto_N"
+          }
+        }
+      },
+      "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5HVPCECZXGABBD2F7NBUAGXMMVK": {
+        "dataSources": {
+          "Teste": {
+            "tableName": "Teste"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Teste",
+      "BD_CCusto_N",
+      "Usuarios_Senhas",
+      "Endereco_Arquivos",
+      "BD_PROV_DESCRICOES",
+      "DE_PARA",
+      "PROV_DE_PARA"
+    ],
+    "dependencies": {
+      "fileSource": "749a3461-3398-43fd-9f6d-bbdb9fb09a65"
+    },
+    "dependents": [],
+    "id": "6439f17c-4c20-4c89-badb-74895e62ba48"
+  },
+  "6ba8756d-55cc-4e96-9d3e-1cbeb005600b": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1573/1.0.1573.2770/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "8481706d-c1fe-4c33-aa82-bc5ab9051831"
+    ],
+    "id": "6ba8756d-55cc-4e96-9d3e-1cbeb005600b"
+  },
+  "749a3461-3398-43fd-9f6d-bbdb9fb09a65": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "6439f17c-4c20-4c89-badb-74895e62ba48"
+    ],
+    "id": "749a3461-3398-43fd-9f6d-bbdb9fb09a65"
+  },
+  "8481706d-c1fe-4c33-aa82-bc5ab9051831": {
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "workFlowCallbackUri": "https://prod-85.westus.logic.azure.com:443/workflows/b7314583be524cb4b0313a9739a54b0a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=JHykQkbyW5NvpwdlaAXMdqBy7ABPwcXrV1_RKbZCW7w",
+      "workflowEndpoint": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/72B256B066C64CD38B5CA7BB0E1A9D45-8637600C13E24EA88F27513412F473DD/providers/Microsoft.Logic/workflows/10c7bc3d-9b49-426f-9494-709f2d3e2615",
+      "workflowName": "10c7bc3d-9b49-426f-9494-709f2d3e2615",
+      "workflowPath": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/72B256B066C64CD38B5CA7BB0E1A9D45-8637600C13E24EA88F27513412F473DD/providers/Microsoft.Logic/workflows/10c7bc3d-9b49-426f-9494-709f2d3e2615"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Fluxos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "6ba8756d-55cc-4e96-9d3e-1cbeb005600b": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "10c7bc3d-9b49-426f-9494-709f2d3e2615"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "6ba8756d-55cc-4e96-9d3e-1cbeb005600b"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "10c7bc3d-9b49-426f-9494-709f2d3e2615"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "EnviarEmail"
+    ],
+    "dependencies": {
+      "shared_office365": "6ba8756d-55cc-4e96-9d3e-1cbeb005600b"
+    },
+    "dependents": [],
+    "id": "8481706d-c1fe-4c33-aa82-bc5ab9051831"
+  },
+  "d61a79f8-17d2-4aff-8b77-3ac36effc815": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Email de Grupos do Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/office365groupsmail/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365groupsmail",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "EmaildeGruposdoOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d61a79f8-17d2-4aff-8b77-3ac36effc815"
+  }
+}

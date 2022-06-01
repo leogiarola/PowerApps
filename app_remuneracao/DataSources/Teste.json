@@ -1,0 +1,41 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2021-12-16T17:33:45.6580000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "Atualizado_x0020_em": "Atualizado em",
+      "ID_x0020_Cargo": "ID Cargo",
+      "ID_x0020_FuncAo_x0020_(auto)": "ID FuncAo (auto)",
+      "N": "N",
+      "N-1": "N-1",
+      "N-2": "N-2",
+      "N-3": "N-3",
+      "NOME_x0020__x0026__x0020_SOBRENOME_x0020_BP_x0020_(AJUSTADO)": "NOME & SOBRENOME BP (AJUSTADO)",
+      "NOME_x0020__x0026__x0020_SOBRENOME_x0020_GESTOR_x0020_(AJUSTADO)": "NOME & SOBRENOME GESTOR (AJUSTADO)",
+      "Nomenclatura_x0020_da_x0020_Função": "Nomenclatura da Função",
+      "Nomenclatura_x0020_do_x0020_Cargo": "Nomenclatura do Cargo",
+      "Responsabilidade_x0020_1": "Responsabilidade 1",
+      "Responsabilidade_x0020_10": "Responsabilidade 10",
+      "Responsabilidade_x0020_2": "Responsabilidade 2",
+      "Responsabilidade_x0020_3": "Responsabilidade 3",
+      "Responsabilidade_x0020_4": "Responsabilidade 4",
+      "Responsabilidade_x0020_5": "Responsabilidade 5",
+      "Responsabilidade_x0020_6": "Responsabilidade 6",
+      "Responsabilidade_x0020_7": "Responsabilidade 7",
+      "Responsabilidade_x0020_8": "Responsabilidade 8",
+      "Responsabilidade_x0020_9": "Responsabilidade 9",
+      "Sumário_x0020_da_x0020_Função": "Sumário da Função"
+    },
+    "DatasetName": "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5HVPCECZXGABBD2F7NBUAGXMMVK",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Teste",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

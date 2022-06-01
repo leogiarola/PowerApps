@@ -1,0 +1,533 @@
+"home As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =420
+        Width: =Parent.Width
+        Y: =348
+        ZIndex: =1
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1036
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Group1_1 As group:
+                Height: =5
+                Width: =5
+                X: =-155
+                Y: =-74
+                ZIndex: =5
+
+                Rectangle5_9 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(204, 204, 204, 1)
+                    Fill: =RGBA(237, 237, 237, 1)
+                    FocusedBorderThickness: =4
+                    Height: =377
+                    HoverFill: =RGBA(204, 204, 204, 1)
+                    PressedFill: =RGBA(204, 204, 204, 1)
+                    Width: =1281
+                    X: =40
+                    Y: =420
+                    ZIndex: =1
+
+                Label3_41 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(0, 0, 0, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Lato Black'
+                    Height: =26
+                    Size: =13
+                    Text: ="Cronograma"
+                    Width: =1281
+                    X: =40
+                    Y: =420
+                    ZIndex: =2
+
+                Label3_42 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Height: =326
+                    Overflow: =Overflow.Scroll
+                    Size: =10
+                    Text: ="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =639
+                    X: =57
+                    Y: =461
+                    ZIndex: =3
+
+                Image4_2 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =344
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: ='gantt-1-blog_Easy-Resize.com_'
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =608
+                    X: =696
+                    Y: =437
+                    ZIndex: =4
+
+            Group2_1 As group:
+                Height: =5
+                Width: =5
+                X: =-135
+                Y: =-382
+                ZIndex: =12
+
+                Rectangle5_10 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(204, 204, 204, 1)
+                    Fill: =RGBA(237, 237, 237, 1)
+                    FocusedBorderThickness: =4
+                    Height: =377
+                    HoverFill: =RGBA(204, 204, 204, 1)
+                    PressedFill: =RGBA(204, 204, 204, 1)
+                    Width: =1281
+                    X: =40
+                    Y: =24
+                    ZIndex: =5
+
+                Label3_43 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(0, 0, 0, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Lato Black'
+                    Height: =26
+                    Size: =13
+                    Text: ="Publicações"
+                    Width: =1281
+                    X: =40
+                    Y: =24
+                    ZIndex: =6
+
+                Label3_45 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =Normal
+                    Height: =107
+                    Overflow: =Overflow.Scroll
+                    Size: =10
+                    Text: ="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =1247
+                    X: =57
+                    Y: =101
+                    ZIndex: =7
+
+                Label3_47 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =Normal
+                    Height: =143
+                    Overflow: =Overflow.Scroll
+                    Size: =10
+                    Text: ="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =934
+                    X: =370
+                    Y: =250
+                    ZIndex: =8
+
+                Label3_44 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(179, 179, 179, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Lato Black'
+                    Height: =26
+                    Size: =13
+                    Text: ="Texto 01"
+                    Width: =1281
+                    X: =40
+                    Y: =75
+                    ZIndex: =9
+
+                Label3_46 As label:
+                    Align: =Left
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(179, 179, 179, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Lato Black'
+                    Height: =26
+                    Size: =13
+                    Text: ="Texto 02"
+                    Width: =1281
+                    X: =40
+                    Y: =212
+                    ZIndex: =10
+
+                Image5_2 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =143
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: ='wheel-pic2'
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =288
+                    X: =57
+                    Y: =250
+                    ZIndex: =11
+
+    RectQuickActionBar6 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =40
+        Width: =Parent.Width
+        ZIndex: =2
+
+    RectQuickActionBar6_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =318
+        Width: =Parent.Width
+        Y: =40
+        ZIndex: =3
+
+    Label6 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Verdana
+        FontWeight: =FontWeight.Bold
+        Height: =78
+        Size: =45
+        Text: ="REMUNERAÇÃO & ESTRUTURA"
+        Width: =1366
+        Y: =40
+        ZIndex: =4
+
+    Image1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =199
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='gestão-de-contratos-1'
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =1280
+        X: =43
+        Y: =149
+        ZIndex: =10
+
+    Image7 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='Logomarca CSN Mineração'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =73
+        X: =1286
+        ZIndex: =11
+
+    Image12 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =login_cinza
+        OnSelect: =Navigate(login)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =48
+        ZIndex: =16
+
+    nomeUsuario As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =VarUsuarios
+        X: =48
+        ZIndex: =17
+
+    menu_6 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =27
+
+        Label5_62 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(home)
+            Size: =13
+            Text: ="HOME"
+            Width: =176
+            X: =177
+            Y: =109
+            ZIndex: =18
+
+        Label5_61 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: |
+                =Navigate(estrutura)
+            Size: =13
+            Text: ="AJUSTE DE ESTRUTURA"
+            Width: =225
+            X: =357
+            Y: =109
+            ZIndex: =19
+
+        Label5_60 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(relatorios)
+            Size: =13
+            Text: ="RELATÓRIOS"
+            Width: =176
+            X: =605
+            Y: =109
+            ZIndex: =20
+
+        Label5_59 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(projetos)
+            Size: =13
+            Text: ="PROJETOS"
+            Width: =176
+            X: =798
+            Y: =109
+            ZIndex: =21
+
+        Label5_58 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            HoverColor: =RGBA(255, 191, 0, 1)
+            OnSelect: =Navigate(organograma)
+            Size: =13
+            Text: ="ORGANOGRAMA"
+            Width: =176
+            X: =1012
+            Y: =109
+            ZIndex: =22
+
+        Label5_57 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =310
+            Y: =108
+            ZIndex: =23
+
+        Label5_56 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =582
+            Y: =108
+            ZIndex: =24
+
+        Label5_54 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =759
+            Y: =108
+            ZIndex: =25
+
+        Label5_55 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(115, 115, 115, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(115, 115, 115, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            HoverColor: =RGBA(115, 115, 115, 1)
+            Size: =13
+            Text: ="|"
+            Width: =43
+            X: =965
+            Y: =108
+            ZIndex: =26
+

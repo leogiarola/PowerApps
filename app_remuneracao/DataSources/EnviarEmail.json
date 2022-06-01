@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "10c7bc3d-9b49-426f-9494-709f2d3e2615",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "EnviarEmail",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

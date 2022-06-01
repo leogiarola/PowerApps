@@ -1,0 +1,22 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2021-12-16T17:33:45.6580000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "ENDERECO": "ENDERECO",
+      "NOME_x0020_ARQUIVO": "NOME ARQUIVO",
+      "URLimagem": "URLimagem"
+    },
+    "DatasetName": "b!AB2fFo1iAkei4RpoL9Zl9hQDWz2-yi9GlwEs1UAxzEZSjzVxRgwKS7vzhx9Tnz63.01TLMNU5A5X3YMOSUSAFAKXCLDUQ2Q3HXK",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Endereco_Arquivos",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

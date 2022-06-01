@@ -1,0 +1,598 @@
+Graficos_1 As screen:
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    RectQuickActionBar1_6 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =57
+        Width: =Parent.Width
+        ZIndex: =4
+
+    IconRefresh1_4 As icon.Reload:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        Height: =88
+        Icon: =Icon.Reload
+        OnSelect: =Refresh([@Teste])
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        PressedFill: =RGBA(0, 0, 0, 0)
+        TabIndex: =0
+        Tooltip: ="Atualizar lista"
+        Visible: =false
+        Width: =88
+        X: =Parent.Width - IconNewItem1_4.Width - IconSortUpDown1_4.Width - Self.Width
+        ZIndex: =5
+
+    IconSortUpDown1_4 As icon.ArrowsUpDown:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        Height: =88
+        Icon: =Icon.Sort
+        OnSelect: |-
+            =UpdateContext({SortDescending1: !SortDescending1})
+        PaddingBottom: =26
+        PaddingLeft: =26
+        PaddingRight: =26
+        PaddingTop: =26
+        PressedFill: =RGBA(0, 0, 0, 0)
+        TabIndex: =0
+        Tooltip: =If(SortDescending1, "Classificar lista em ordem alfabética inversa", "Classificar lista em ordem alfabética")
+        Visible: =false
+        Width: =88
+        X: =Parent.Width - IconNewItem1_4.Width - Self.Width
+        ZIndex: =6
+
+    IconNewItem1_4 As icon.Add:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisplayMode: =If(DataSourceInfo([@Teste], DataSourceInfo.CreatePermission), DisplayMode.Edit, DisplayMode.Disabled)
+        Height: =88
+        Icon: =Icon.Add
+        OnSelect: =NewForm(EditForm1);Navigate(xxEditarDescricao, ScreenTransition.None)
+        PaddingBottom: =24
+        PaddingLeft: =24
+        PaddingRight: =24
+        PaddingTop: =24
+        PressedFill: =RGBA(0, 0, 0, 0)
+        TabIndex: =0
+        Tooltip: ="Criar novo item"
+        Visible: =false
+        Width: =88
+        X: =Parent.Width - Self.Width
+        ZIndex: =7
+
+    BotaoVoltar_12 As icon.BackArrow:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(230, 230, 230, 1)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =52
+        X: =11
+        Y: =10
+        ZIndex: =9
+
+    LblAppName1_4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(58, 58, 58, 0)
+        Font: =Font.'Segoe UI'
+        Height: =57
+        Size: =18
+        Text: ="DASHBOARD"
+        Width: =Parent.Width - Self.X - IconSortUpDown1_4.Width - IconNewItem1_4.Width - IconRefresh1_4.Width
+        Wrap: =false
+        X: =74
+        ZIndex: =10
+
+    DataTable2_1 As dataTable.datatable:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(0, 120, 212, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =277
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 120, 212, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =AddColumns(GroupBy(BD_PROV_DESCRICOES,"Gestor_x0020_da_x0020_UO_x0020_(Nome_x0020_Completo)","gpGestores"),"Total",Sum(gpGestores,Validou))
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(0, 120, 212, 1)
+        PrimaryColor2: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        SelectedColor: =RGBA(51, 51, 51, 1)
+        SelectedFill: =RGBA(0, 120, 212, .2)
+        Size: =13
+        Visible: =false
+        Width: =548
+        X: =818
+        Y: =489
+        ZIndex: =12
+
+        "'Gestor da UO (Nome Completo)_Column1_1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Gestor da UO (Nome Completo)"
+            FieldName: ="Gestor_x0020_da_x0020_UO_x0020_(Nome_x0020_Completo)"
+            FieldVariantName: ="textualColumn"
+            Height: =360
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =
+            Width: =451
+            X: =3
+            Y: =21
+            ZIndex: =1
+
+        Total_Column1_1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Total"
+            FieldName: ="Total"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Total
+            Width: =103
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+    GraficoGeral As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =27
+
+        RectQuickActionBar1_7 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =283
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =675
+            X: =11
+            Y: =130
+            ZIndex: =3
+
+        GraficoGestores_2 As barChart:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Segoe UI'
+            Height: =411
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            ItemColorSet: =[Blue,Pink, RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+            Items: |
+                =AddColumns(GroupBy(BD_PROV_DESCRICOES,"Gestor_x0020_da_x0020_UO_x0020_(Nome_x0020_Completo)","gpGestores"),"Total",Sum(gpGestores,Validou))
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            Size: =18
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =715
+            X: =651
+            Y: =66
+            ZIndex: =11
+
+        Label3_15 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =54
+            Size: =13
+            Text: ="Total Realizado"
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =286
+            X: =41
+            Y: =210
+            ZIndex: =14
+
+        Label3_12 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =56
+            Size: =13
+            Text: ="Total de descrições"
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =332
+            X: =41
+            Y: =168
+            ZIndex: =15
+
+        Label3_17 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =83
+            Size: =13
+            Text: ="% Total Realizado"
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =286
+            X: =41
+            Y: =242
+            ZIndex: =18
+
+        Label3_14 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =58
+            Size: =13
+            Text: =Sum(BD_PROV_DESCRICOES,Validou)
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =114
+            X: =440
+            Y: =205
+            ZIndex: =20
+
+        Label3_13 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =63
+            Size: =13
+            Text: =CountA(BD_PROV_DESCRICOES.'Gestor da UO (Nome Completo)')
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =114
+            X: =440
+            Y: =168
+            ZIndex: =21
+
+        Label3_16 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =74
+            Size: =13
+            Text: =Concatenate(Round((Sum(BD_PROV_DESCRICOES,Validou))/(CountA(BD_PROV_DESCRICOES.'Gestor da UO (Nome Completo)'))%,2)," %")
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =189
+            X: =440
+            Y: =239
+            ZIndex: =24
+
+        GraficoQtdValidadoCargos_2 As barChart:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Segoe UI'
+            Height: =365
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            ItemColorSet: =[Blue,Pink, RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+            Items: |
+                =AddColumns(GroupBy(BD_PROV_DESCRICOES,"Denominação_x0020_de_x0020_Cargo","gpCargos"),"Total",Sum(gpCargos,Validou))
+            ItemsGap: =
+            OnSelect: =
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            Size: =18
+            Visible: =If(varMudarGrafico="Geral",true)
+            Width: =1218
+            Y: =401
+            ZIndex: =25
+
+    GraficoGestor As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =29
+
+        RectQuickActionBar1_8 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =283
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =675
+            X: =11
+            Y: =130
+            ZIndex: =2
+
+        Label3_21 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =89
+            Size: =13
+            Text: ="Total Realizado do Gestor"
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =400
+            X: =33
+            Y: =216
+            ZIndex: =13
+
+        Label3_23 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =89
+            Size: =13
+            Text: ="% Total Realizado do Gestor"
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =400
+            X: =33
+            Y: =289
+            ZIndex: =16
+
+        Label3_19 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =85
+            Size: =13
+            Text: ="Total Descrição do Gestor"
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =379
+            X: =33
+            Y: =148
+            ZIndex: =17
+
+        Label3_20 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =127
+            Size: =13
+            Text: =Sum(Filter(BD_PROV_DESCRICOES,'ID GESTOR'= cxusuario.Text),Validou)
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =114
+            X: =432
+            Y: =192
+            ZIndex: =19
+
+        Label3_22 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =127
+            Size: =13
+            Text: |
+                =Concatenate(Round((Sum(Filter(BD_PROV_DESCRICOES,'ID GESTOR'= cxusuario.Text),Validou))/(CountA(Filter(BD_PROV_DESCRICOES,'ID GESTOR'= cxusuario.Text).'ID GESTOR'))*100,2)," %")
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =189
+            X: =432
+            Y: =274
+            ZIndex: =22
+
+        Label3_18 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =127
+            Size: =13
+            Text: =CountA(Filter(BD_PROV_DESCRICOES,'ID GESTOR'= cxusuario.Text).'ID GESTOR')
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =114
+            X: =432
+            Y: =130
+            ZIndex: =23
+
+        GraficoGestores_3 As barChart:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Segoe UI'
+            Height: =423
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            ItemColorSet: =[Orange,Black, RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+            Items: |
+                =AddColumns(GroupBy(Filter(BD_PROV_DESCRICOES,'ID GESTOR'=cxusuario.Text),"Gestor_x0020_da_x0020_UO_x0020_(Nome_x0020_Completo)","gpGestores"),"Total",Sum(Filter(BD_PROV_DESCRICOES,'ID GESTOR'=cxusuario.Text),Validou))
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            Size: =18
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =288
+            X: =89
+            Y: =345
+            ZIndex: =26
+
+        GraficoQtdValidadoCargos_3 As barChart:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Segoe UI'
+            Height: =547
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            ItemColorSet: =[Blue,Pink, RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+            Items: |
+                =AddColumns(GroupBy(Filter(BD_PROV_DESCRICOES,'ID GESTOR'=cxusuario.Text),"Denominação_x0020_de_x0020_Cargo","gpCargos"),"Total",Sum(gpCargos,Validou))
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            Size: =18
+            Visible: =If(varMudarGrafico="Gestor",true)
+            Width: =680
+            X: =686
+            Y: =57
+            ZIndex: =28
+
+    Button3 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(179, 179, 179, 1)
+        DisplayMode: =If(varMudarGrafico="Gestor",DisplayMode.Disabled,DisplayMode.Edit)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =43
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(179, 179, 179, 1)
+        OnSelect: =Set(varMudarGrafico,"Gestor")
+        PressedBorderColor: =
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(179, 179, 179, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Gestor"
+        Width: =158
+        X: =11
+        Y: =66
+        ZIndex: =30
+
+    Button3_1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(179, 179, 179, 1)
+        DisplayMode: =If(varMudarGrafico="Geral",DisplayMode.Disabled,DisplayMode.Edit)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =43
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(179, 179, 179, 1)
+        OnSelect: =Set(varMudarGrafico,"Geral")
+        PressedBorderColor: =
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(179, 179, 179, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Geral"
+        Width: =158
+        X: =175
+        Y: =66
+        ZIndex: =31
+
+    GraficoGestores_4 As barChart:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        Height: =423
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        ItemColorSet: =[Orange,Black, RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+        Items: |
+            =AddColumns(GroupBy(Filter(BD_PROV_DESCRICOES,'ID GESTOR'=cxusuario.Text),"Gestor_x0020_da_x0020_UO_x0020_(Nome_x0020_Completo)","gpGestores"),"Total",CountA(Filter(BD_PROV_DESCRICOES,'ID GESTOR'= cxusuario.Text).'ID GESTOR'))
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =18
+        Visible: |
+            =If(varMudarGrafico="Gestor",true)
+        Width: =252
+        X: =333
+        Y: =345
+        ZIndex: =32
+
+    LogoCSN_2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =138
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='CSN MINERAÇÃO PRETA'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =148
+        X: =1218
+        Y: =604
+        ZIndex: =33
+
