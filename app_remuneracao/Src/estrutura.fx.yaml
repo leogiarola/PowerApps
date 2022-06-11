@@ -113,6 +113,7 @@
         ImagePosition: =ImagePosition.Fill
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =1280
         X: =43
         Y: =149
